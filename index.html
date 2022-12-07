@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout - DOM</title>
+    <link rel="icon" href="workout.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="combo-modal">
+        <div class="combo-modal-content">
+          <div class="close-modal">
+            <span
+              class="material-icons material-symbols-outlined md-36"
+              id="close"
+            >
+              close
+            </span>
+          </div>
+          <div class="modal-content"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="toggle-content toForm">
+          <span class="material-symbols-outlined"> arrow_back_ios </span>
+          Complete Combo Form
+        </div>
+        <form class="name-form form item">
+          <input type="text" placeholder="Type your name..." maxlength="20" />
+          <button id="name-form-submit">Submit</button>
+          <div class="user-name"></div>
+        </form>
+        <div class="current-time item"></div>
+        <form class="age-form form item">
+          <input type="date" />
+          <button>Check your age</button>
+          <div class="user-age"></div>
+        </form>
+      </div>
+      <div class="combo">
+        <form class="combo-form form item">
+          <div class="ndiv">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              required
+              maxlength="20"
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="City"
+              required
+              maxlength="20"
+              autocomplete="off"
+            />
+          </div>
+          <div class="check">
+            <input type="checkbox" name="cat" id="cat" />
+            <label for="cat">Iti plac pisicile?</label>
+          </div>
+          <div class="rdiv">
+            <p>1 + 1 = ... ?</p>
+            <div class="patru">
+              <input
+                type="radio"
+                name="cat"
+                data-value="fals"
+                id="math"
+                checked
+              />
+              <label for="math">4</label>
+            </div>
+            <div class="doi">
+              <input type="radio" name="cat" id="math" data-value="adevarat" />
+              <label for="math">2</label>
+            </div>
+          </div>
+          <div class="fdiv">
+            <label for="free">In timpul liber prefer sa...</label>
+            <select name="free" id="free">
+              <option value="film">Ma uit la filme</option>
+              <option value="sport">Fac sport</option>
+              <option value="plimb">Ma plimb</option>
+              <option value="niciuna" selected>Niciuna dintre variante</option>
+            </select>
+          </div>
+          <button id="submit-combo">Submit</button>
+        </form>
+
+        <div class="toggle-content back">
+          Go Back
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-text">
+          Workout DOM Project by <span class="my-name">Popescu Andrei</span> for
+          <span class="digital-explorer"
+            ><a href="https://digitalexplorers.eu/" target="_blank"
+              >Digital Explorer</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
